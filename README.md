@@ -1,6 +1,7 @@
 # 09-1 Ansible
 
 ### Решение
+Ссылки:  
 1. [`Vagrantfile`](https://github.com/io-sys/1-9-Ansible/tree/master/Vagrant/09-1-ansible)  
 2. [`Playbook`](https://github.com/io-sys/1-9-Ansible/tree/master/ansible-playbook)  
 3. Роль с именем[`nginx_8080port`](https://github.com/io-sys/1-9-Ansible/tree/master/ansible-role/roles/nginx_8080port) создана по `Plabook`'у  
