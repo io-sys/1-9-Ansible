@@ -63,7 +63,7 @@ ss -ltnp | grep nginx
 ```php
 curl 127.0.0.1:8080
 ```
-__Копирование  файлов между хостами__
+__Копирование  файлов между хостами__  
 Скопировать с `web`-сервера файл `nginx.conf`
 ```php
 scp -i /home/vagrant/.ssh/id_rsa vagrant@192.168.11.151:/etc/nginx/nginx.conf .
