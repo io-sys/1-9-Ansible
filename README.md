@@ -24,14 +24,10 @@
 
 
 ### Cheat sheet
-  
+__Ansible__ 
 Проверить доступность хоста `ping-pong`
 ```php
 ansible web -m ping
-```
-Скопировать с `web`-сервера файл `nginx.conf`
-```php
-scp -i /home/vagrant/.ssh/id_rsa vagrant@192.168.11.151:/etc/nginx/nginx.conf .
 ```
 Проиграть одну таску по тегу.
 ```php
@@ -63,4 +59,11 @@ __Проверки для Web-сервера__
 ss -ltnp | grep nginx
 ```
 Загрузить стартовую страницу `Web`-сервера (порт 8080)
+```php
 curl 127.0.0.1:8080
+```
+__Копирование  файлов между хостами__
+Скопировать с `web`-сервера файл `nginx.conf`
+```php
+scp -i /home/vagrant/.ssh/id_rsa vagrant@192.168.11.151:/etc/nginx/nginx.conf .
+```
