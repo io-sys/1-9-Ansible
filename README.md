@@ -1,8 +1,8 @@
 # 09-1 Ansible
 
-(`Vagrantfile`)[https://github.com/io-sys/1-9-Ansible/tree/master/Vagrant/09-1-ansible]
-(`Playbook`)[https://github.com/io-sys/1-9-Ansible/tree/master/ansible-playbook]
-(Роль создана с именем`nginx_8080port` по `Plabook`'у)[https://github.com/io-sys/1-9-Ansible/tree/master/ansible-role/roles/nginx_8080port]
+[`Vagrantfile`](https://github.com/io-sys/1-9-Ansible/tree/master/Vagrant/09-1-ansible)
+[`Playbook`](https://github.com/io-sys/1-9-Ansible/tree/master/ansible-playbook)
+[Роль с именем`nginx_8080port` по `Plabook`'у](https://github.com/io-sys/1-9-Ansible/tree/master/ansible-role/roles/nginx_8080port)
 
 
 __Домашнее задание__
