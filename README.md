@@ -25,17 +25,15 @@
 
 ### Cheat sheet
   
-проеврить доступность `ping-pong`
+Проверить доступность хоста `ping-pong`
 ```php
 ansible web -m ping
 ```
-
 Скопировать с `web`-сервера файл `nginx.conf`
 ```php
 scp -i /home/vagrant/.ssh/id_rsa vagrant@192.168.11.151:/etc/nginx/nginx.conf .
 ```
-
-Проиграть одну таску по тегу
+Проиграть одну таску по тегу.
 ```php
 ansible-playbook playbook.yml --tags "replace_nginx_conf"
 ```
@@ -43,27 +41,26 @@ ansible-playbook playbook.yml --tags "replace_nginx_conf"
 ```php
 ansible-playbook playbook.yml
 ```
-
-```php
-ss -ltnp | grep nginx
-```
-
 Проверить синтаксис:
 ```php
 ansible-playbook fail2ban.yml --syntax-check
 ```
-
 Посмотреть список хостов на которых будет выполняться роль. При этом сами таски не выполняются.
 ```php
 ansible-playbook fail2ban.yml --list-hosts
 ```
-
 Посмотреть все таски, которые входят в роль:
 ```php
 ansible-playbook fail2ban.yml --list-tasks
 ```
-
 Посмотреть все теги в роли:
 ```php
 ansible-playbook fail2ban.yml --list-tags
 ```
+__Проверки для Web-сервера__
+Проверить на каком порту слушает `Web`-сервер Nginx  
+```php
+ss -ltnp | grep nginx
+```
+Загрузить стартовую страницу `Web`-сервера (порт 8080)
+curl 127.0.0.1:8080
