@@ -1,6 +1,7 @@
 # Описание
 
 Стенд для практики на уроке "Автоматизация с помощью Ansible"
+по ссылке: https://gitlab.com/otus_linux/09-1-ansible
 
 ## Quick Start
 
@@ -14,5 +15,3 @@ vagrant up
 
 * `ansible` - с уже установленным пакетом `ansible` и ключом для доступа к хосту `web`
 * `web` - управляемый хост с которым будем экспериментировать
-
-Задание находится по ссылке: https://docs.google.com/document/d/1xaQZVyzw37kbZjk43sXo3xHV74ukGeQpFeyLwIwTNwQ/edit?usp=sharing
