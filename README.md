@@ -21,3 +21,47 @@
 ✅- при написании `playbook`/роли соблюдены перечисленные в задании условия  
 Критерии оценки: Ставим 5 если создан `playbook`  
 Ставим 6 если написана роль.  
+
+
+### Cheat sheet
+```php
+ansible web -m ping
+```
+
+Скопировать с `web`-сервера файл `nginx.conf`
+```php
+scp -i /home/vagrant/.ssh/id_rsa vagrant@192.168.11.151:/etc/nginx/nginx.conf .
+```
+
+Проиграть одну таску по тегу
+```php
+ansible-playbook playbook.yml --tags "replace_nginx_conf"
+```
+Проиграть веcь `playbook`
+```php
+ansible-playbook playbook.yml
+```
+
+```php
+ss -ltnp | grep nginx
+```
+
+Проверить синтаксис:
+```php
+ansible-playbook fail2ban.yml --syntax-check
+```
+
+Посмотреть список хостов на которых будет выполняться роль. При этом сами таски не выполняются.
+```php
+ansible-playbook fail2ban.yml --list-hosts
+```
+
+Посмотреть все таски, которые входят в роль:
+```php
+ansible-playbook fail2ban.yml --list-tasks
+```
+
+Посмотреть все теги в роли:
+```php
+ansible-playbook fail2ban.yml --list-tags
+```
