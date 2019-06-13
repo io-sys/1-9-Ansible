@@ -32,7 +32,7 @@ ansible web -m ping
 ```
 Проиграть одну таску по тегу.
 ```php
-ansible-playbook playbook.yml --tags "replace_nginx_conf"
+ansible-playbook playbook.yml --tags "repo-install"
 ```
 Проиграть веcь `playbook`
 ```php
