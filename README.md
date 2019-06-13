@@ -38,7 +38,7 @@ ansible-playbook playbook.yml --tags "replace_nginx_conf"
 ```php
 ansible-playbook playbook.yml
 ```
-Проверить синтаксис:
+Проверить синтаксис
 ```php
 ansible-playbook fail2ban.yml --syntax-check
 ```
@@ -46,11 +46,11 @@ ansible-playbook fail2ban.yml --syntax-check
 ```php
 ansible-playbook fail2ban.yml --list-hosts
 ```
-Посмотреть все таски, которые входят в роль:
+Посмотреть все таски, которые входят в роль
 ```php
 ansible-playbook fail2ban.yml --list-tasks
 ```
-Посмотреть все теги в роли:
+Посмотреть все теги в роли
 ```php
 ansible-playbook fail2ban.yml --list-tags
 ```
