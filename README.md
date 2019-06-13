@@ -55,7 +55,7 @@ ansible-playbook fail2ban.yml --list-tasks
 ansible-playbook fail2ban.yml --list-tags
 ```
 __Проверки для Web-сервера__  
-Проверить на каком порту слушает `Web`-сервер Nginx  
+Проверить на каком порту слушает `Web`-сервер `Nginx`  
 ```php
 ss -ltnp | grep nginx
 ```
