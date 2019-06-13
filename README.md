@@ -25,7 +25,7 @@
 
 
 ### Cheat sheet
-__Ansible__ 
+__Ansible__  
 Проверить доступность хоста `ping-pong`
 ```php
 ansible web -m ping
