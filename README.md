@@ -24,6 +24,8 @@
 
 
 ### Cheat sheet
+  
+проеврить доступность `ping-pong`
 ```php
 ansible web -m ping
 ```
