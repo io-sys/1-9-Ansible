@@ -42,7 +42,7 @@ ansible-playbook playbook.yml
 ```php
 ansible-playbook fail2ban.yml --syntax-check
 ```
-Посмотреть список хостов на которых будет выполняться роль. При этом сами таски не выполняются.
+Посмотреть список хостов, на которых будет выполняться роль. При этом сами таски не выполняются.
 ```php
 ansible-playbook fail2ban.yml --list-hosts
 ```
