@@ -1,0 +1,10 @@
+---
+# handlers file for nginx_8080port
+- name: Start Nginx Web Service for RedHat
+  systemd: name=nginx state=started enabled=yes
+  when: ansible_os_family == "RedHat"
+
+- name: Restart Nginx Web Server for RedHat
+  systemd: name=nginx state=restarted
+  when: ansible_os_family == "RedHat"
+

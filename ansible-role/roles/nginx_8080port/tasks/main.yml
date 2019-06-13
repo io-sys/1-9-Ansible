@@ -1,0 +1,23 @@
+---
+# tasks file for nginx_8080port
+- block:  # **** REDHAT **** #
+
+    - name: Install Repo epel-release
+      yum: name=epel-release state=present
+      tags: repo-install
+
+    - name: Install Nginx Web Server
+      yum: name=nginx state=latest
+      notify:
+        - Start Nginx Web Service for RedHat
+      tags: install
+
+    - name: Replace Config nginx.conf with Template where Default Port 8080
+      template: src=nginx.conf.j2  dest={{ nginx__destin_folder}}/nginx.conf  mode=0544
+      notify:
+        - Restart Nginx Web Server for RedHat
+      when: nginx__replace_nginx_conf == true
+      tags: configuration
+
+  when: ansible_os_family == "RedHat"
+

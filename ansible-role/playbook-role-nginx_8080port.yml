@@ -1,0 +1,12 @@
+---
+- name: Install and Configure Nginx Web Server
+  hosts: web
+  become: yes
+  gather_facts: yes
+
+  vars:
+    nginx__replace_nginx_conf: true     # Replace nginx.conf or not
+
+  roles:
+    - { role: nginx_8080port, when: ansible_system == 'Linux' }
+
